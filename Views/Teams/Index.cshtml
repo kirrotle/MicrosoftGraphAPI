@@ -1,0 +1,25 @@
+<!-- Copyright (c) Microsoft Corporation. All rights reserved.
+Licensed under the MIT License. -->
+
+<!-- <CalendarIndexSnippet> -->
+@model Microsoft.Graph.UserJoinedTeamsCollectionPage
+
+
+@{
+    ViewData["Title"] = "Calendar";
+}
+
+<div class="mb-3">
+  <h1 class="mb-3"></h1>
+</div>
+<div class="calendar-week">
+    @{
+        var a = Model.CurrentPage.FirstOrDefault().DisplayName;
+
+        var b = a.ToString();
+        var c = 0;
+
+        Html.Raw(b);
+    }
+</div>
+<!-- </CalendarIndexSnippet> -->
